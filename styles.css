@@ -1,0 +1,155 @@
+
+
+/* hay tres tipos de visualización fundamentales que determinan cómo se estructuran nuestros elementos: block, inline e inline-block 
+Sin embargo, es importante notar que elementos inline no reconocen propiedades de tamaño como width y height
+*/
+
+/*secion es un elemento padre o un contenedor
+Si es un elemento padre display.flex, permite la dirección, justify-content
+h2 es un elemento o un elemento hijo
+se les puede cambiar el orden, 
+*/
+
+/* # seleccionador de id*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=IM+Fell+DW+Pica:ital@0;1&display=swap');
+
+body{
+    font-family: "Berkshire Swash", serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #FBF8EF;
+    background-image: url("./Captura\ de\ pantalla\ 2025-03-15\ 214433.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#seleccionar-mascota {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    margin: 20px 10px 10px 10px;
+    color: #AEEEEE;
+    font-size: 65px;
+    text-shadow: 0px 0px 35px #32CD32;
+}
+.subtitulo {
+    color: #AEEEEE;
+    font-size: 35px;
+    text-shadow: 0px 0px 10px #32CD32;
+}
+
+.tarjetas {
+    display: flex;
+    gap: 10px;
+    font-size: 22px;
+}
+
+.tarjeta-de-mokepon {
+    width: 250px;
+    height: 250px;
+    background-color: rgba(50, 50, 50, 0.7);
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    display: flex;
+    color: #FBF8EF;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+    flex-direction: column
+    
+}
+
+.tarjeta-de-mokepon img {
+    width: 180px;
+}
+
+#boton-mascota {
+    width: 350px;
+    height: 55px;
+    padding: 8px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    background-color: rgba(50, 50, 50, 0.7);
+    border: 2px solid white;
+    color: #80CBC4;
+    font-family: "Berkshire Swash", serif;
+    margin: 10px 10px 10px 10px;
+    box-shadow: 0px 0px 10px rgba(76, 175, 80, 0.8); /* Brillo suave */
+    transition: 0.3s ease;
+    font-size: 22px;
+        
+}
+
+
+input {
+    display: none; 
+}
+
+input:checked + label {
+    background-color: #5bd15b;
+}
+
+#seleccionar-ataque {
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-ataque {
+    width: 350px;
+    height: 55px;
+    background-color: rgba(50, 50, 50, 0.7);
+    border: 2px solid white;
+    color: #80CBC4;
+    font-family: "Berkshire Swash", serif;
+    margin: 10px 10px 10px 10px;
+    box-shadow: 0px 0px 5px rgba(151, 160, 151, 0.8); /* Brillo suave */
+    transition: 0.3s ease;
+    font-size: 28px;
+    border-radius: 8px;
+}
+
+
+#boton-reiniciar{
+    border: none;
+    color: #80CBC4;
+    font-family: "Berkshire Swash", serif;
+    font-size: 25px;
+    margin: auto;
+}
+
+.ataques {
+    display: grid;
+    text-align: center;
+    grid-template-columns: 100px 100px
+    
+}
+
+.columna-jugador,
+.columna-enemigo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #aedfc8;
+  font-size: 15px;
+}
+
+#mascota-jugador,
+#mascota-enemigo {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+#mensajes {
+    font-size: 40px;
+    background-color: rgb(191, 226, 226);
+}
